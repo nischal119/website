@@ -1,0 +1,157 @@
+/* Text Colors */
+.text-primary
+{
+  color: #28a745;
+}
+
+.text-secondary
+{
+  color: #0284d0;
+}
+
+/* Btn */
+
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 2px 20px;
+}
+.btn:hover{
+  opacity: 0.8;
+}
+.btn-primary , .bg-primary
+{
+  background: #28a745;
+  color: #fff;
+
+}
+.btn-secondary , .bg-secondary
+{
+  background-color: #0284d0;
+  color: #fff;
+}
+.btn-dark , .bg-dark
+{
+  background-color: #333;
+  color: #fff;
+}
+.btn-light , .bg-light
+{
+  background-color: #fff;
+
+  color: #333;
+}
+
+.btn-outline{
+  background: transparent;
+  border: solid white;
+}
+
+/* Flex Items */
+.flex-items
+{
+  display: flex;
+  justify-content: center;
+  line-height: 1.2rem;
+  padding: 10px 10px 5px 10px;
+  text-align: center;
+  height: 100%;
+}
+.flex-items > div{
+  padding: 30px;
+}
+
+/* Flex Columns */
+
+/* .flex-columns .flex-reverse .row{ */
+
+.flex-columns .row
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2
+{
+  height: 100%;
+}
+
+/* Till now the image goes up as we reduce the size
+So for fixing it we do.. */
+.flex-columns img{
+  width: 100%;
+  height: 100%;
+  /* It does the thing but the image will strech up so to fix it */
+  object-fit: cover;
+}
+/* The green background doesnot cover the container so to do that  */
+.flex-columns .column-2
+
+
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.flex-columns h2{
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.flex-columns h4{
+margin-bottom: 10px;
+font-size: 20px;
+}
+.flex-columns p{
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+
+/* Section Header */
+.section-header{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+  justify-content: center
+  ;
+  text-align:center;
+}
+.section-header h2{
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.section-padding{
+  padding: 20px 20px 40px;
+}
+
+/* Flex Grid */
+.flex-grid .row{
+  display: flex;
+  flex-wrap:wrap ;
+  padding: 0px 40px;
+}
+.flex-grid .column{
+  flex: 25%;
+  max-width: 25%;
+}
